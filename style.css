@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  --fs-header: 1.375rem;
+  --fw-header: 600;
+  --lh-header: 1.75rem;
+
+  --fs-paragraph: 1.125rem;
+  --font-family: 'Outfit', sans-serif;
+  --fw-300: 300;
+  --fw-400: 400;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: var(--font-family);
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-dark-blue-main-bg);
+}
+
+h1 {
+  font-size: var(--fs-header);
+  line-height: var(--lh-header);
+  font-weight: var(--fw-header);
+}
+
+.card-container {
+  padding: 1.5rem  1.5rem 2rem;
+  border-radius: .9375rem;
+  background-color: var(--very-dark-blue-card-bg);
+}
+
+.nft-img {
+  border-radius: .5rem;
+  height: 18.875rem;
+  width: 18.875rem;
+}
+footer {
+  position: absolute;
+  bottom: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
