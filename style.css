@@ -62,7 +62,8 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:hover>h1 {
+a:hover,
+a:hover>h1 {
   color: var(--cyan);
 }
 
@@ -134,8 +135,7 @@ p.nft-descr {
   justify-content: flex-end;
 }
 
-.price-term-container,
-.card-footer {
+.price-term-container {
   margin-block: 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -186,4 +186,30 @@ footer {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 37.5rem) {
+  .card-container {
+    width: 20.4375rem;
+    padding: 1.5rem;
+
+  }
+
+  .img-container {
+    height: 17.375rem;
+    width: 17.375rem;
+  }
+
+
+  h1 {
+    margin-block: 1.5rem .75rem;
+  }
+
+  p.nft-descr {
+    margin-block: .75rem 1rem;
+  }
+
+  .price-term-container {
+    margin-block: 1rem;
+  }
 }
