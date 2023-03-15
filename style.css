@@ -48,26 +48,139 @@ h1 {
   font-size: var(--fs-header);
   line-height: var(--lh-header);
   font-weight: var(--fw-header);
+  color: var(--white);
+  margin-block: 1.5rem 1rem;
+}
+
+p {
+  color: var(--soft-blue);
+  font-weight: var(--fw-400);
+  line-height: 1.26rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:hover>h1 {
+  color: var(--cyan);
+}
+
+p.nft-descr {
+  font-weight: var(--fw-300);
+  line-height: 1.625rem;
+  margin-block: 1rem 1.5rem;
 }
 
 .card-container {
-  padding: 1.5rem  1.5rem 2rem;
+  width: 21.875rem;
+  padding: 1.5rem 1.5rem 2rem;
   border-radius: .9375rem;
+
   background-color: var(--very-dark-blue-card-bg);
 }
 
 .nft-img {
   border-radius: .5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.img-container {
+  cursor: pointer;
+  position: relative;
   height: 18.875rem;
   width: 18.875rem;
 }
+
+.overlay {
+  position: absolute;
+  opacity: 0;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  border-radius: .5rem;
+  transition: opacity 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.overlay img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
+.price p {
+  color: var(--cyan);
+  font-size: 1rem;
+  font-weight: var(--fw-header);
+  line-height: 1.26rem;
+}
+
+.price,
+.term {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.term {
+  justify-content: flex-end;
+}
+
+.price-term-container,
+.card-footer {
+  margin-block: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-term-container img {
+  width: 1rem;
+  height: fit-content;
+  margin-inline-end: .4375rem;
+}
+
+.avatar {
+  width: 2.0625rem;
+  height: 2.0625rem;
+  border: .0625rem solid var(--white);
+  border-radius: 50%;
+}
+
+.author-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-block-start: 1rem;
+  border-top: 1px solid var(--very-dark-blue-line);
+}
+
+.author-title {
+  margin-inline-start: 1rem;
+}
+
+.author-name {
+  color: var(--white);
+}
+
+.author-container p {
+  font-size: 1rem;
+}
+
 footer {
   position: absolute;
   bottom: 1rem;
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: .6875rem;
   text-align: center;
 }
 
